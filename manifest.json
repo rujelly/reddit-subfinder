@@ -8,7 +8,10 @@
     "default_title": "Find subreddits through other Redditors"
   },
   "manifest_version": 2,
-  "background": {
-    "scripts": ["subfinder.js"]
-  }
+  "content_scripts": [
+    {
+    "matches": ["https://www.reddit.com/*"],
+    "js": ["subfinder.js"]
+    }
+  ]
 }
