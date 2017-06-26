@@ -1,0 +1,17 @@
+{
+  "name": "Subfinder",
+  "description": "See other Redditors' favorite subs",
+  "version": "0.1",
+  "browser_action": {
+    "default_title": "Subfinder",
+    "default_icon": "icon.png",
+    "default_title": "Find subreddits through other Redditors"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+    "matches": ["https://www.reddit.com/*"],
+    "js": ["subfinder.js"]
+    }
+  ]
+}
